@@ -54,13 +54,8 @@ export default function Achievements() {
             <motion.div 
               variants={fadeIn("up", "spring", index * 0.1, 0.75)}
               key={index} 
-              className="card glass-effect" 
+              className="glass-effect achievement-card" 
               style={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'flex-start',
-              gap: '1.5rem',
-              padding: '2rem',
               background: 'var(--nav-bg)',
               border: '1px solid var(--glass-border)',
               borderRadius: '16px',

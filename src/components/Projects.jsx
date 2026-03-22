@@ -370,7 +370,7 @@ export default function Projects() {
                 <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6', flexGrow: 1, marginBottom: '1.5rem' }}>{proj.desc}</p>
 
                 {/* Persistent Links */}
-                <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
+                <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto', flexWrap: 'wrap' }}>
                   <a href={proj.github} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
                     <Github size={16} /> Code
                   </a>
