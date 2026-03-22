@@ -63,7 +63,7 @@ export default function Footer() {
               { icon: <Github size={20} />, href: 'https://github.com/jay-prakash-kumar' },
               { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/in/jay-prakashkumar/' },
               { icon: <Twitter size={20} />, href: 'https://www.twitter.com' },
-              { icon: <Globe size={20} />, href: 'jayprakashportfolio.vercel.app/' }
+              { icon: <Globe size={20} />, href: 'https://jayprakashportfolio.vercel.app' }
             ].map((social, idx) => (
               <a 
                 key={idx} 
