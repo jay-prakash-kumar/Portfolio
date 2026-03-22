@@ -55,21 +55,21 @@ export default function Skills() {
               key={i}
               className="glass-effect card"
               style={{
-                background: "rgba(24, 24, 27, 0.6)", /* zinc-900/60 */
-                border: "1px solid rgba(39, 39, 42, 1)", /* zinc-800 */
-                borderRadius: "1rem", /* rounded-2xl */
-                padding: "1.5rem", /* p-6 */
+                background: "var(--nav-bg)", 
+                border: "1px solid var(--glass-border)", 
+                borderRadius: "1rem", 
+                padding: "1.5rem", 
                 transition: "all 0.3s ease",
                 cursor: "default"
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = "0 10px 40px rgba(249, 115, 22, 0.15)"; /* orange glow */
+                e.currentTarget.style.boxShadow = "0 10px 40px var(--accent-glow)"; 
                 e.currentTarget.style.borderColor = "var(--accent-color)";
                 e.currentTarget.style.transform = "translateY(-4px)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = "none";
-                e.currentTarget.style.borderColor = "rgba(39, 39, 42, 1)";
+                e.currentTarget.style.borderColor = "var(--glass-border)";
                 e.currentTarget.style.transform = "translateY(0)";
               }}
             >
@@ -82,10 +82,11 @@ export default function Skills() {
                   <div
                     key={idx}
                     style={{
-                      background: "rgba(39, 39, 42, 1)", /* zinc-800 bg */
-                      color: "rgba(212, 212, 216, 1)", /* zinc-300 text */
+                      background: "var(--input-bg)", 
+                      color: "var(--text-primary)", 
+                      border: "1px solid var(--text-secondary)",
                       padding: "0.25rem 0.75rem",
-                      borderRadius: "9999px", /* pill shape */
+                      borderRadius: "9999px", 
                       fontSize: "0.875rem",
                       fontWeight: "500",
                       transition: "all 0.3s ease",
@@ -93,11 +94,13 @@ export default function Skills() {
                     onMouseEnter={(e) => {
                       e.currentTarget.style.background = "var(--accent-color)";
                       e.currentTarget.style.color = "#ffffff";
+                      e.currentTarget.style.borderColor = "var(--accent-color)";
                       e.currentTarget.style.transform = "scale(1.05)";
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.background = "rgba(39, 39, 42, 1)";
-                      e.currentTarget.style.color = "rgba(212, 212, 216, 1)";
+                      e.currentTarget.style.background = "var(--input-bg)";
+                      e.currentTarget.style.color = "var(--text-primary)";
+                      e.currentTarget.style.borderColor = "var(--text-secondary)";
                       e.currentTarget.style.transform = "scale(1)";
                     }}
                   >
