@@ -24,29 +24,29 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer" style={{ 
-      background: 'var(--bg-primary)', 
-      padding: '5rem 0 2rem', 
+    <footer className="footer" style={{
+      background: 'var(--bg-primary)',
+      padding: '5rem 0 2rem',
       position: 'relative',
       borderTop: '1px solid var(--glass-border)',
       marginTop: 'auto'
     }}>
       <div className="container">
-        
+
         {/* Top Section */}
-        <div style={{ 
-          display: 'flex', 
-          flexWrap: 'wrap', 
-          justifyContent: 'space-between', 
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
           alignItems: 'center',
           gap: '2rem',
           marginBottom: '3rem'
         }}>
           {/* Logo and Tagline */}
           <div style={{ maxWidth: '400px' }}>
-            <h2 className="gradient-text" style={{ 
-              fontSize: '2.2rem', 
-              fontWeight: '800', 
+            <h2 className="gradient-text" style={{
+              fontSize: '2.2rem',
+              fontWeight: '800',
               marginBottom: '0.8rem',
               letterSpacing: '-0.5px'
             }}>
@@ -65,37 +65,37 @@ export default function Footer() {
               // { icon: <Twitter size={20} />, href: 'https://www.twitter.com' },
               { icon: <Globe size={20} />, href: 'https://jayprakashportfolio.vercel.app' }
             ].map((social, idx) => (
-              <a 
-                key={idx} 
-                href={social.href} 
-                target="_blank" 
+              <a
+                key={idx}
+                href={social.href}
+                target="_blank"
                 rel="noreferrer"
                 className="social-icon-btn"
                 style={{
-                  width: '45px', 
-                  height: '45px', 
-                  borderRadius: '50%', 
-                  background: 'var(--nav-bg)', 
+                  width: '45px',
+                  height: '45px',
+                  borderRadius: '50%',
+                  background: 'var(--nav-bg)',
                   border: '1px solid var(--glass-border)',
-                  display: 'flex', 
-                  alignItems: 'center', 
+                  display: 'flex',
+                  alignItems: 'center',
                   justifyContent: 'center',
                   color: 'var(--text-secondary)',
                   transition: 'all 0.3s ease'
                 }}
                 onMouseEnter={(e) => {
-                   e.currentTarget.style.color = '#000';
-                   e.currentTarget.style.background = 'var(--accent-color)';
-                   e.currentTarget.style.borderColor = 'var(--accent-color)';
-                   e.currentTarget.style.transform = 'translateY(-3px)';
-                   e.currentTarget.style.boxShadow = '0 5px 15px var(--accent-glow)';
+                  e.currentTarget.style.color = '#000';
+                  e.currentTarget.style.background = 'var(--accent-color)';
+                  e.currentTarget.style.borderColor = 'var(--accent-color)';
+                  e.currentTarget.style.transform = 'translateY(-3px)';
+                  e.currentTarget.style.boxShadow = '0 5px 15px var(--accent-glow)';
                 }}
                 onMouseLeave={(e) => {
-                   e.currentTarget.style.color = 'var(--text-secondary)';
-                   e.currentTarget.style.background = 'var(--nav-bg)';
-                   e.currentTarget.style.borderColor = 'var(--glass-border)';
-                   e.currentTarget.style.transform = 'translateY(0)';
-                   e.currentTarget.style.boxShadow = 'none';
+                  e.currentTarget.style.color = 'var(--text-secondary)';
+                  e.currentTarget.style.background = 'var(--nav-bg)';
+                  e.currentTarget.style.borderColor = 'var(--glass-border)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'none';
                 }}
               >
                 {social.icon}
@@ -105,19 +105,19 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div style={{ 
-          height: '1px', 
-          width: '100%', 
-          background: 'var(--glass-border)', 
+        <div style={{
+          height: '1px',
+          width: '100%',
+          background: 'var(--glass-border)',
           opacity: 0.3,
-          marginBottom: '1.5rem' 
+          marginBottom: '1.5rem'
         }}></div>
 
         {/* Bottom Section */}
-        <div style={{ 
-          display: 'flex', 
-          flexWrap: 'wrap', 
-          justifyContent: 'space-between', 
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
           alignItems: 'center',
           gap: '1rem',
           color: 'var(--text-secondary)',
@@ -127,16 +127,12 @@ export default function Footer() {
           <div>
             &copy; {new Date().getFullYear()} Jay Prakash. All rights reserved.
           </div>
-          <div style={{ display: 'flex', gap: '2rem' }}>
-            <a href="#" style={{ transition: 'color 0.3s ease', textDecoration: 'none', color: 'inherit' }} onMouseEnter={e => e.currentTarget.style.color='var(--text-primary)'} onMouseLeave={e => e.currentTarget.style.color='var(--text-secondary)'}>Privacy Policy</a>
-            <a href="#" style={{ transition: 'color 0.3s ease', textDecoration: 'none', color: 'inherit' }} onMouseEnter={e => e.currentTarget.style.color='var(--text-primary)'} onMouseLeave={e => e.currentTarget.style.color='var(--text-secondary)'}>Terms of Service</a>
-          </div>
         </div>
 
       </div>
 
       {/* Floating Scroll to Top Button */}
-      <button 
+      <button
         onClick={scrollToTop}
         style={{
           position: 'fixed',
@@ -160,12 +156,12 @@ export default function Footer() {
           zIndex: 999
         }}
         onMouseEnter={(e) => {
-           e.currentTarget.style.transform = 'translateY(-5px) scale(1.05)';
-           e.currentTarget.style.boxShadow = '0 8px 25px rgba(234, 179, 8, 0.6)';
+          e.currentTarget.style.transform = 'translateY(-5px) scale(1.05)';
+          e.currentTarget.style.boxShadow = '0 8px 25px rgba(234, 179, 8, 0.6)';
         }}
         onMouseLeave={(e) => {
-           e.currentTarget.style.transform = 'translateY(0) scale(1)';
-           e.currentTarget.style.boxShadow = '0 4px 15px rgba(239, 68, 68, 0.4)';
+          e.currentTarget.style.transform = 'translateY(0) scale(1)';
+          e.currentTarget.style.boxShadow = '0 4px 15px rgba(239, 68, 68, 0.4)';
         }}
         aria-label="Scroll to top"
       >
