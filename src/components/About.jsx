@@ -23,9 +23,13 @@ export default function About() {
           viewport={{ once: true, amount: 0.25 }}
         >
           <motion.div variants={fadeIn("up", "tween", 0.2, 1)} className="about-text">
-            <h3>Turning Complex Workflows into Effortless Experiences</h3>
-            <p>As a Full Stack Engineer and UI/UX Designer pursuing my B.Tech in Computer Science and Engineering, I specialize in bridging the gap between intuitive design and robust backend architecture & building products.</p>
-            <p> My approach combines a deep understanding of visual psychology—leveraging Gestalt laws to craft clean, user-centric interfaces—with the technical execution of the MERN stack. Whether I'm conducting competitive UI evaluations for educational platforms or architecting responsive web applications, I focus on delivering seamless digital experiences from the database to the DOM.</p>
+            <h3>Turning Complex Ideas into Effortless Experiences</h3>
+            <p style={{ textAlign: "justify", lineHeight: "1.8", margin: "0 auto 1.5rem auto" }}>
+              I am a Full Stack Engineer and UI/UX Designer pursuing my B.Tech in Computer Science and Engineering. I focus on bridging the gap between beautiful, intuitive design and strong backend architecture to build amazing products.
+            </p>
+            <p style={{ textAlign: "justify", lineHeight: "1.8", margin: "0 auto 2rem auto" }}>
+              My approach is straightforward: I build clean, user-friendly interfaces powered by modern technologies like the MERN stack. From designing smooth web applications to writing efficient code, my ultimate goal is to deliver seamless digital experiences that users genuinely enjoy—from the front-end visuals all the way down to the database.
+            </p>
 
             <motion.div variants={staggerContainer(0.2, 0.5)} className="about-stats">
               <motion.div variants={fadeIn("up", "tween", 0, 0.5)} className="stat-item">
