@@ -7,15 +7,15 @@ export default function Achievements() {
     { 
       title: 'Leetcode Consistency', 
       year: '2026',
-      desc: 'Tackled 50+ DSA problems, demonstrating problem-solving dedication and daily consistency', 
+      desc: 'Tackled 150+ DSA problems, demonstrating problem-solving dedication and daily consistency', 
       icon: <Star size={28} className="text-highlight" /> 
     },
-    { 
-      title: 'Open Source Contributer', 
-      year: '2026',
-      desc: 'Developing new scalable solutions daily commiting my contributions to github', 
-      icon: <Target size={28} className="text-highlight" /> 
-    },
+    // { 
+    //   title: 'Open Source Contributer', 
+    //   year: '2026',
+    //   desc: 'Developing new scalable solutions daily commiting my contributions to github', 
+    //   icon: <Target size={28} className="text-highlight" /> 
+    // },
         { 
       title: '5-Star in Hackerrank ', 
       year: '2025',
