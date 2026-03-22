@@ -33,7 +33,7 @@ export default function About() {
                 <p>CGPA</p>
               </motion.div>
               <motion.div variants={fadeIn("up", "tween", 0, 0.5)} className="stat-item">
-                <h4>3+</h4>
+                <h4>4+</h4>
                 <p>Projects Completed</p>
               </motion.div>
               <motion.div variants={fadeIn("up", "tween", 0, 0.5)} className="stat-item">
