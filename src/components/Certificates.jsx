@@ -22,13 +22,13 @@ export default function Certificates() {
       image: nImg,
       link: "https://drive.google.com/file/d/1Jdttg9N4uOPA-O5rqSFdQ5uC_UOc34lM/view",
     },
-    {
-      title: "Java (Basic)",
-      issuer: "HackerRank",
-      date: "2025",
-      image: hImg,
-      link: "https://www.hackerrank.com/certificates/799ffee31aaf",
-    },
+    // {
+    //   title: "Java (Basic)",
+    //   issuer: "HackerRank",
+    //   date: "2025",
+    //   image: hImg,
+    //   link: "https://www.hackerrank.com/certificates/799ffee31aaf",
+    // },
     {
       title: "Responsive Web Design",
       issuer: "FreeCodeCamp",

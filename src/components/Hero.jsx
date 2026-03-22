@@ -38,7 +38,7 @@ export default function Hero() {
               intuitive interfaces, develop scalable applications, and ensure
               high-quality, bug-free products.
             </p>
-            <h2 className="gradient-text tagline text-2xl" style={{ marginBottom: '2rem' }}>Pixels.Code.Passion</h2>
+            {/* <h2 className="gradient-text tagline text-2xl" style={{ marginBottom: '2rem' }}>Pixels.Code.Passion</h2> */}
             <div className="hero-cta">
               <a href="#contact" className="btn btn-primary">
                 HIRE ME <ArrowRight size={18} />
